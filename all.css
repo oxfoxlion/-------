@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+*,*:before,*:after{
+    box-sizing:border-box;
+    }
+    
+body{
+    font-family:"Noto Sans TC", serif;
+}
+
+/* 上方 */
+
+.addTicket{
+    max-width:920px;
+    margin: 120px auto 100px auto;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    gap:30px;
+    padding: 60px 95px;
+}
+
+.imgBlock{
+    width: 50%;
+}
+
+.searchBlock{
+    width: 50%;
+}
+
+.searchBlock h1{
+    color:#00807E;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: #00807E 3px solid;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:6px;
+    margin-bottom: 32px;
+}
+
+
+
+.searchBlock label{
+    color:#00807E;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: medium;
+}
+
+.searchBlock .input input,select{
+    height: 38px;
+    font-size: 16px;
+    line-height: 22px;
+    background: #FAFAFA;
+    color:#818A91;
+    padding: 8px 12px;
+    border: 0;
+    width: 72%;
+    border-bottom: #00807E 1px solid;
+}
+
+.searchBlock .input{
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:31px;
+}
+
+.submit{
+    padding: 10px 20px;
+    border-radius: 4.8px;
+    background: #00807E;
+    border: 0;
+    color:#FFFFFF;
+}
+
+.submit:hover{
+    background:#004E4D;
+}
+
+.submit-box{
+    display: flex;
+    justify-self: end;
+}
+
+
+
+
+/* 下方 */
+
+.background-gray{
+    background:#F7F7F7;
+    padding-top: 56px;
+    padding-bottom: 119px;
+}
