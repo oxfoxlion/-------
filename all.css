@@ -104,7 +104,7 @@ body{
     font-weight: medium;
 }
 
-.searchBlock .input input,select{
+.searchBlock .input input,.searchBlock .input select{
     height: 38px;
     font-size: 16px;
     line-height: 22px;
@@ -150,4 +150,126 @@ body{
     background:#F7F7F7;
     padding-top: 56px;
     padding-bottom: 119px;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.searchByArea{
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+    align-items: center;
+}
+
+.searchByArea select{
+    width: 255px;
+    padding: 8px 12px;
+    border: #CED4DA 1px solid;
+    color: #818A91;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.searchByArea p{
+    font-size: 16px;
+    line-height: 22px;
+    color:#818A91;
+}
+
+/* card */
+
+.allPackage{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:30px;
+    margin-top: 52px;
+}
+
+.packageCard{
+    box-shadow: 0px 3px 6px #00000029;
+    width: 350px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.packageCard-content{
+    padding: 20px 20px 14px 20px;
+}
+
+.packageCard-body h2{
+    color:#00807E;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight:bold;
+    margin-bottom: 16px;
+    border-bottom: #00807E 2px solid;
+    padding-bottom: 4px;
+}
+
+.packageCard-body p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #818A91;
+    margin-bottom: 22px;
+}
+
+.package-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.package-footer p {
+    color: #00807E;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:4px;
+}
+
+.price h3{
+    color: #00807E;
+    font-size: 32px;
+    line-height: 43px;
+    font-weight: 600;
+}
+
+.lastNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.area-tag{
+    position: absolute;
+    padding: 8px 20px;
+    background: #64C3BF;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 24px;
+    left: 0;
+    top:-15px;
+    border-radius: 0px 4px 0px 4px;
+}
+
+.score{
+    position: absolute;
+    padding: 5px 8px;
+    background: #00807E;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 22px;
+    left: 0;
+    top:170px;
+    border-radius: 0 2px 0 2px;
 }
