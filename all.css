@@ -104,7 +104,7 @@ body{
     font-weight: medium;
 }
 
-.searchBlock .input input,.searchBlock .input select{
+.searchBlock .input input,.searchBlock .input select,.searchBlock .input textarea{
     height: 38px;
     font-size: 16px;
     line-height: 22px;
@@ -116,11 +116,15 @@ body{
     border-bottom: #00807E 1px solid;
 }
 
+.searchBlock .input textarea{
+    height: 111px;
+}
+
 .searchBlock .input{
     margin-bottom: 16px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:start;
     gap:31px;
 }
 
@@ -150,11 +154,13 @@ body{
     background:#F7F7F7;
     padding-top: 56px;
     padding-bottom: 119px;
+
 }
 
 .container{
     max-width: 1110px;
     margin: 0 auto;
+    padding: 30px;
 }
 
 .searchByArea{
@@ -183,25 +189,53 @@ body{
 
 .allPackage{
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
-    align-items: center;
     gap:30px;
     margin-top: 52px;
 }
 
 .packageCard{
     box-shadow: 0px 3px 6px #00000029;
-    width: 350px;
+    width: 30%;
     border-radius: 4px;
     position: relative;
+    /* height:600px; */
+}
+
+.packageCard-header{
+    overflow: hidden;
+}
+
+.packageCard-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.packageCard-header img:hover{
+    transform: scale(1.15);
 }
 
 .packageCard-content{
     padding: 20px 20px 14px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: space-between;
 }
 
-.packageCard-body h2{
+.packageCard-body .packageCard-title{
+    text-decoration: none;
     color:#00807E;
+}
+
+.packageCard-body .packageCard-title:hover{
+    color:#64C3BF;
+}
+
+.packageCard-body .packageCard-title h2{
     font-size: 24px;
     line-height: 33px;
     font-weight:bold;
@@ -260,6 +294,7 @@ body{
     left: 0;
     top:-15px;
     border-radius: 0px 4px 0px 4px;
+    z-index: 10;
 }
 
 .score{
@@ -272,4 +307,66 @@ body{
     left: 0;
     top:170px;
     border-radius: 0 2px 0 2px;
+    z-index: 10;
+}
+
+@media (max-width:920px) {
+/* 上方 */
+.addTicket{
+    width:100%;
+    border-radius:0;
+    box-shadow: 0;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding: 30px 30px;
+    margin: 0;
+}
+
+.imgBlock{
+    width: 100%;
+}
+
+.imgBlock img{
+    margin: 0 auto;
+}
+
+.searchBlock{
+    width: 80%;
+}
+
+.pc{
+    display: none;
+}
+
+/* 下方 */
+
+.searchByArea{
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+/* card */
+
+.allPackage{
+    justify-content: center;
+}
+
+.packageCard{
+    width: 45%;
+
+}
+}
+
+@media (max-width:760px) {
+    .searchBlock{
+        width: 100%;
+    }
+
+    .packageCard{
+        width: 90%;
+    
+    }
 }
